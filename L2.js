@@ -17,7 +17,7 @@ const transformedObj = obj.map((subArray) =>
   subArray.reduce((currentA, { key, value }) => {
     currentA[key] = value;
     return currentA;
-  }, {})
+  },{})
 );
 
 console.log(transformedObj);

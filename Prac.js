@@ -16,13 +16,14 @@ const obj = [
   ],
 ];
 
-const obj2 = obj.map((inner) =>
-  inner.reduce((currentA, { key, value }) => {
-    currentA[key] = value;
-    return currentA;
+
+let obj1 = obj.map((innerA)=>
+  innerA.reduce((currentA,{key,value})=>{
+    currentA[key]=value
+    return currentA
   },{})
-);
+)
 
 
 
-console.log(obj2);
+console.log(obj1);
